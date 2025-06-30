@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IFA Entry Page</title>
+</head>
+<body>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2c0054, #002a6e);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-section {
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 120px;
+  border-radius: 65px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+.enter-btn {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background-color: #002345;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.enter-btn:hover {
+  background-color: #240053;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+    </style>
+  <div class="container">
+    <div class="logo-section">
+      <img src="ifa.png" alt="IFA Logo" class="logo" />
+    </div>
+    <button class="enter-btn" onclick="enterSite()">Let's Go</button>
+  </div>
+
+  <script>
+    function enterSite() {
+      window.location.href = "index1.html";
+    }
+  </script>
+</body>
+</html>
